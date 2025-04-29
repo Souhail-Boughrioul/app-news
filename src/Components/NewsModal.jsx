@@ -1,5 +1,4 @@
 import React from 'react'
-import demoImg from '../assets/images/news.jpg'
 import './NewsModal.css'
 
 const NewsModal = ({show,onClose,article}) => {

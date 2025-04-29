@@ -15,7 +15,6 @@ html{
 .container{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, #b88efc, #6677f4);
     display: grid;
     place-items: center;
 }

@@ -1,4 +1,3 @@
-
 import noImg from '../assets/images/plc-holder.svg'
 import './News.css'
 import axios from 'axios'
@@ -40,7 +39,6 @@ const News = () => {
             })
             setHeadline(fetchedNews[0])
             setNews(fetchedNews.slice(1,7))
-            console.log(fetchedNews.slice(1,7))
         }
 
         fetchNews()
@@ -81,9 +79,9 @@ const News = () => {
                 <div className="news-grid">
                     {news.map((article, index)=>(
                        <div onClick={()=> handleArticleClick(article)} className="news-grid-item" key={index}>
-                        <img className='img-grid' src={article.image || noImg} alt={article.title} />
-                        <h3>{article.title}</h3>
-                    </div> 
+                            <img className='img-grid' src={article.image || noImg} alt={article.title} />
+                            <h3>{article.title}</h3>
+                        </div> 
                     ))}
                     
                 </div>
